@@ -1,0 +1,123 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  .hamburger {
+    display: none;
+  }
+  nav {
+    display: block;
+    ul {
+      display: flex;
+      height: 100%;
+      margin: 0;
+      li {
+        border-style: none;
+        a {
+          div {
+            height: $flag-height;
+            border-radius: 0 0 $flag-radius $flag-radius;
+            padding: $flag-padding;
+            p {
+              margin-top: $flag-text-margin;
+            }
+          }
+        }
+      }
+    }
+  }
+  #nav {
+    display: block;
+  }
+}
+
+.activepage {
+  background-color: $primary-color;
+  p {
+    color: white;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+main {
+  .slide-secondary {    
+    div {
+      flex-basis: 19%;      
+    }
+    div:last-child{
+      margin: 0;
+    }
+  }
+
+  .house-details {
+    display: flex;
+    ul {
+      flex-basis: 50%;
+    }
+    ul:first-child {
+      padding-right: 0.5rem;
+    }
+    ul:last-child {
+      padding-left: 0.5rem;
+    }
+  }
+  .contact-container {
+    form {
+      div {
+        width: 50%;
+      }
+      div:nth-child(odd) {
+        padding-right: 0.5rem;
+      }
+      div:nth-child(even) {
+        padding-left: 0.5rem;
+      }
+      div.full-width {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: $footer-margin-top;
+  div.content {
+    display: flex;
+    div {
+      display: inline-block;
+      width: 25%;
+      figure + p {
+        text-align: right;
+        display: inline-block;
+      }
+      figure:first-child {
+        margin: 2em 0 0 0;
+        width: 100%;
+        a {
+          width: 100%;
+          img {
+            float: right;
+            width: 75%;
+          }
+        }
+      }
+      figure:last-child {
+        margin: 0;
+        width: 100%;
+        a {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hidesmall {
+  display: block;
+}
